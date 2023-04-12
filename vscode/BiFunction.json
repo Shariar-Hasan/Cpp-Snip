@@ -1,0 +1,77 @@
+{
+  "Push Back": {
+    "prefix": "pb",
+    "body": ["push_back(${0});"],
+    "description": "Inserts an element at the end of a container."
+  },
+  "Pop Back": {
+    "prefix": "pob",
+    "body": ["pop_back(${0});"],
+    "description": "Removes the last element from a container."
+  },
+  "Push Front": {
+    "prefix": "pf",
+    "body": ["push_front(${0});"],
+    "description": "Inserts an element at the beginning of a container."
+  },
+
+  "Make Pair": {
+    "prefix": "mp",
+    "body": ["make_pair(${0});"],
+    "description": "Creates a pair object with two values."
+  },
+
+  "Max Element": {
+    "prefix": "maxall",
+    "body": ["*max_element(${0});"],
+    "description": "Finds the maximum element in a container."
+  },
+  "Min Element": {
+    "prefix": "minall",
+    "body": ["*min_element(${0});"],
+    "description": "Finds the minimum element in a container."
+  },
+  "Memset Function": {
+    "prefix": "memset",
+    "body": ["memset(${0}, 0, sizeof(${0}));"],
+    "description": "Sets a block of memory to a particular value."
+  },
+
+  "Sort Function": {
+    "prefix": "sort",
+    "body": ["sort(${0});"],
+    "description": "Sorts a container in ascending order."
+  },
+  "Reverse Sort Function": {
+    "prefix": "revsort",
+    "body": ["sort(${0}, [](int a, int b) { return a > b; });"],
+    "description": "Sorts a container for array in descending order."
+  },
+
+  "memset funtion": {
+    "prefix": "memset",
+    "body": ["memset(${0}, 0, sizeof(${0}));"],
+    "description": "Fill 0 | -1 to any array"
+  },
+  "count funtion": {
+    "prefix": "count",
+    "body": ["count(${1}, ${1} + n, ${0});", ""],
+    "description": "Count the number of appearance in a certain iterable"
+  },
+
+  "Max Function": {
+    "prefix": "max",
+    "body": ["max(${0});"],
+    "description": "Finds the maximum of two values."
+  },
+  "Min Function": {
+    "prefix": "min",
+    "body": ["min(${0});"],
+    "description": "Finds the minimum of two values."
+  },
+  "Print New Line": {
+    "prefix": "nln",
+    "body": ["cout << \"\\n\";;"],
+    "description": "Prints a new line using C++ cout.Useful for formatting output."
+  }
+}

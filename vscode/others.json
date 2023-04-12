@@ -1,0 +1,16 @@
+{
+    "STL begin end": {
+		"prefix": "vall",
+		"body": [
+			"${0}.begin(), ${0}.end()"
+		],
+		"description": "Complete from beginning to ending element of a STL"
+	},
+	"Array begin end": {
+		"prefix": "aall",
+		"body": [
+			"${0:a}, ${0:a} + n"
+		],
+		"description": "Complete from beginning to ending element of an array"
+	}
+}

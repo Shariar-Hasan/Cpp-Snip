@@ -1,0 +1,21 @@
+{
+    "competitive cpp snippet": {
+        "prefix": "cppcontest",
+        "body": [
+          "#include <bits/stdc++.h>",
+          "using namespace std;",
+          "",
+          "int main()",
+          "{",
+          "\tios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);",
+          "\tint _tst = 1;",
+          "\tcin >> _tst; //comment this line if your have only 1 test case",
+          "\tfor(int _ = 1; _ <= _tst ; ++_){",
+          "\t\t${1}",
+          "\t}",
+          "\treturn 0;",
+          "}"
+        ],
+        "description": "CPP snippet by Cpp-Snip "
+      }
+}

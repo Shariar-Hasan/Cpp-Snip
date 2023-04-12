@@ -1,0 +1,86 @@
+{
+  "Print new line": {
+    "prefix": "nln",
+    "body": ["cout << \"\\n\";", ""],
+    "description": "Print a new line anywhere"
+  },
+  "Print all element in array": {
+    "prefix": "printall",
+    "body": [
+      "for(auto item : ${0}){",
+      "\tcout << item << \" \";",
+      "}",
+      "cout << \"\\n\";",
+      ""
+    ],
+    "description": "Print all the element in any iterables"
+  },
+  "Input test case": {
+    "prefix": "inptest",
+    "body": [
+      "int _tst = 1;",
+      "cin >> _tst;",
+      "for(int _ = 1; _ <= _tst ; ++_){",
+      "\t${1}",
+      "}"
+    ],
+    "description": "Custom test case inputing"
+  },
+  "Fast input output": {
+    "prefix": "fastio",
+    "body": ["ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);", ""],
+    "description": "To stop sync with stdio, make code faster"
+  },
+
+  "Input Output File Open": {
+    "prefix": "fopen",
+    "body": [
+      "freopen(\"input.txt\", \"r\", stdin);",
+      "freopen(\"output.txt\", \"w\", stdout);",
+      ""
+    ],
+    "description": "Input and output txt file load"
+  },
+  
+  "YES NO": {
+    "prefix": "YESNO",
+    "body": [
+      "if(${0}) cout << \"YES\" << endl;",
+      "else cout << \"NO\" << endl;"
+    ],
+    "description": "Short Cut for IF ELSE Statement"
+  },
+  "Print YES": {
+    "prefix": "yes",
+    "body": [
+      "cout << \"YES\"  << \"\\n\";",
+      ""
+    ],
+    "description": "Print YES with newline"
+  },
+  "Print NO": {
+    "prefix": "no",
+    "body": [
+      "cout << \"NO\"  << \"\\n\";",
+      ""
+    ],
+    "description": "Print NO with newline"
+  },
+
+  "Print an item": {
+    "prefix": "print",
+    "body": [
+      "cout << ${0}  << \"\\n\";",
+      ""
+    ],
+    "description": "Print an item"
+  },
+  "Input an item": {
+    "prefix": "input",
+    "body": [
+      "cin >> ${0};",
+      ""
+    ],
+    "description": "Take input on an item"
+  }
+}
