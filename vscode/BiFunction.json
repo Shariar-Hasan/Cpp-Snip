@@ -69,6 +69,23 @@
     "body": ["min(${0});"],
     "description": "Finds the minimum of two values."
   },
+
+  "If": {
+    "prefix": "IF",
+    "body": ["if(${0}){", "\t", "}"],
+    "description": "If Statement in cpp."
+  },
+  "If else": {
+    "prefix": "IFELSE",
+    "body": ["if(${0}){", "\t", "}else{", "\t", "}"],
+    "description": "If else Statement in cpp."
+  },
+  "If elseif": {
+    "prefix": "IFELSEIF",
+    "body": ["if(${0}){", "\t", "}else if(){", "\t", "}"],
+    "description": "Else if Statement in cpp."
+  },
+
   "Print New Line": {
     "prefix": "nln",
     "body": ["cout << \"\\n\";;"],

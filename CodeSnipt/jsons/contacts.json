@@ -1,0 +1,22 @@
+[
+    {
+        "contact" : "Facebook",
+        "link" : "https://www.facebook.com/iShariarHasan",
+        "icon" : "fab fa-facebook"
+    },
+    {
+        "contact" : "LinkedIn",
+        "link" : "https://www.linkedin.com/in/shariar-hasan/",
+        "icon" : "fab fa-linkedin"
+    },
+    {
+        "contact" : "Github",
+        "link" : "https://github.com/Shariar-Hasan",
+        "icon" : "fab fa-github"
+    },
+    {
+        "contact" : "Email",
+        "link" : "mailto:shahriar.hasan.1523@gmail.com",
+        "icon" : "fas fa-envelope"
+    }
+]

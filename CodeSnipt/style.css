@@ -1,0 +1,313 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #393646 !important;
+  min-height: 800px;
+}
+
+header {
+  background-color: #393646;
+  color: #fff;
+  padding: 10px;
+}
+/* .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} */
+
+/* .header .logo-part {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+} */
+header .logo-part .logo {
+  width: 50px;
+}
+header .logo-part h1 {
+  font-size: 20px;
+  display: inline-block;
+}
+header .nav-part {
+  display: inline-block;
+  margin-left: auto;
+  text-align: right;
+  width: 100%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  color: white;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: blanchedalmond;
+}
+
+.site-button {
+  padding: 15px 60px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  margin: 10px auto;
+  transition: all 0.2s ease-in-out;
+}
+.site-button a {
+  text-decoration: none;
+  color: inherit;
+}
+.site-button a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.click {
+  transition: all 0.35s ease-in-out;
+}
+.click:focus {
+  border: none;
+  outline: none;
+}
+.click:active {
+  transform: scale(0.9);
+}
+
+.site-button.try {
+  background-color: #212121;
+  color: white !important;
+}
+.site-button.try:hover {
+  color: #212121 !important;
+  background-color: #fff;
+}
+.site-button.install {
+  color: #212121 !important;
+  background-color: #fff;
+}
+.site-button.install:hover {
+  background-color: #212121;
+  color: white !important;
+}
+.scroll-to-top {
+  position: fixed;
+  right: 40px;
+  bottom: 24px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  font-size: 25px;
+  color: #212121;
+  opacity: 0.1;
+  visibility: hidden;
+  transition: all 0.15s ease-in-out;
+}
+.scroll-to-top:hover {
+  opacity: 1;
+}
+.scroll-to-top.visible {
+  visibility: visible;
+}
+section {
+  margin-bottom: 40px;
+}
+section .releases {
+  width: 100%;
+  max-height: 200px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  overflow: auto;
+  margin: 10px;
+  background-color: #fff;
+}
+section .releases::-webkit-scrollbar {
+  display: none;
+}
+
+.contact ul.social {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.contact ul.social li {
+  list-style-type: none;
+  margin: 0 15px;
+  display: inline-block;
+  font-size: 30px;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+.contact ul.social li:hover {
+  transform: scale(1.3);
+  color: #007bff;
+}
+.heading {
+  font-style: italic;
+}
+h1,
+h2 {
+  margin: 0;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  margin: 0;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.link:hover {
+  text-decoration: none;
+}
+
+.section-box {
+  background-color: rgb(79, 69, 87);
+  padding: 20px;
+  min-width: 100px;
+  font-family: monospace;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.168);
+}
+.version-history {
+  width: 100%;
+  height: 150px;
+  padding: 20px;
+  margin: 20px auto;
+  overflow: auto;
+}
+.version-history::-webkit-scrollbar {
+  display: none;
+}
+
+.version-history ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  animation: slideToTop 20s ease-in 0ms infinite forwards;
+
+}
+.version-history ul li {
+  list-style: none;
+  padding: 0;
+  margin: 30px auto;
+}
+.version-history ul li::before {
+  content: "\f126";
+  font-family: FontAwesome;
+}
+.text-underline{
+  text-decoration: underline !important;
+}
+@keyframes slideToTop {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+.social-icon{
+  padding: 10px;
+}
+/* Specific Styles */
+
+#dashboard {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+
+
+footer {
+  margin-top: auto;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+.big-screen {
+  width: 100%;
+  padding: 30px;
+  margin: 20px auto;
+  background-color: #4f4557;
+}
+.descibe {
+  color: #f4eee0;
+}
+.descibe ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.descibe ul li {
+  margin: 0;
+  padding: 0;
+}
+.descibe ul li::before {
+  content: "\f00c";
+  font-family: FontAwesome;
+  color: rgb(220, 208, 208);
+  margin: 2px 5px;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 700px) {
+  /* .container {
+    width: 100%;
+    margin: 2px auto;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .header .logo-part img {
+    width: 50px;
+  }
+  .header .logo-part h1 {
+    display: none;
+  }
+  header .nav-part {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  } */
+}
+@media screen and (max-width: 500px) {
+  /* header .logo-part h1 {
+    font-size: 20px;
+    display: none;
+  } */
+}

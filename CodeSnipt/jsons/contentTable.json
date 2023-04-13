@@ -1,0 +1,32 @@
+[
+    {
+        "name" : "Varible",
+        "link" : "varible",
+        "json" : "variable.json"
+    },
+    {
+        "name" : "Input and Outputs",
+        "link" : "input-output",
+        "json" : "inputOutput.json"
+    },
+    {
+        "name" : "Built In Functions",
+        "link" : "built-in",
+        "json" : "BiFunction.json"
+    },
+    {
+        "name" : "Loops",
+        "link" : "loops",
+        "json" : "loops.json"
+    },
+    {
+        "name" : "Others",
+        "link" : "others",
+        "json" : "others.json"
+    },
+    {
+        "name" : "Boilarplate",
+        "link" : "boilarplate",
+        "json" : "boilarplate.json"
+    }
+]

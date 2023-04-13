@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cpp-Snip Website</title>
+    <link rel="shortcut icon" href="./../icon.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="logo-part">
+              <img
+                class="logo"
+                src="./../icon.png"
+                alt="Cpp-Snip-CP official Logo"
+              />
+              <h1 class="display-4">Cpp-Snip-CP</h1>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="nav-part">
+              <nav>
+                <ul>
+                  <li><a class="link lead" href="#documentation">Docs</a></li>
+                  <li>
+                    <a class="link lead" href="#releaselog">Release Log</a>
+                  </li>
+                  <li><a class="link lead" href="#contact">Contact Us</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container p-5">
+        <div class="row my-5">
+          <div
+            class="col-md-6 p-4 d-flex justify-content-center align-items-center"
+          >
+            <div class="banner-typings">
+              <h1 id="typewriter"></h1>
+            </div>
+          </div>
+          <div
+            class="col-md-6 p-4 d-flex justify-content-center align-items-center"
+          >
+            <img
+              class="w-100 shadow rounded"
+              src="./assets/image/banner_assist.png"
+              alt="Screenshot of the code snippet"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mx-auto my-2">
+            <div class="installer mx-auto lead">
+              <button class="site-button click try">
+                <a class="link" href="#documentation">Documentation</a>
+              </button>
+              <button class="site-button click install">
+                <a
+                  target="_blank"
+                  href="https://marketplace.visualstudio.com/items?itemName=Shariar-Hasan.cpp-snip-cp"
+                  >Install Cpp Snip</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="big-screen">
+        <div class="container">
+          <div class="row lead">
+            <div class="col-md-5 my-2 mx-auto px-5 py-3">
+              <div class="descibe">
+                <h2># What is Cpp Snip?</h2>
+                <ul>
+                  <li>A Cpp Boilerplate code</li>
+                  <li>Code typer</li>
+                  <li>Customizable extension(Coming Soon)</li>
+                  <li>Code quality improver</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-5 mx-auto my-2 p-3">
+              <div class="descibe">
+                <h2># Why?</h2>
+                <ul>
+                  <li>Saves time by generating code</li>
+                  <li>Helps improve code quality</li>
+                  <li>Encourages the use of best practices</li>
+                  <li>Helps beginners learn C++ syntax</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container my-2">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="releaselog" class="section-box">
+              <h3 class="heading">Release Logs</h3>
+              <p>
+                View the
+                <a
+                  target="_blanks"
+                  href="https://github.com/Shariar-Hasan/Cpp-Snip/releases"
+                  class="link text-underline"
+                  >latest version major releases</a
+                >
+                and updates of the extension.
+              </p>
+              <div class="version-history text-white lead">
+                <ul id="releaseItems"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container my-3">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-box" id="documentation">
+              <div class="table-of-content">
+                <h2 class="display-4 text-center">Documentation</h2>
+                <p class="lead">This extension provides a number of helpful snippets for quickly typing C++ code during competitive programming contests. Here are all off them:(Click to show content)</p>
+                <h4 class="heading">Table of content</h4>
+                <ul class="table text-white" id="table-of-content"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container my-3">
+        <div class="row">
+          <div class="col-md-12" id="tables-clicked-content">
+            <div class="section-box text-white">
+              <div id="contents-with-detail">
+                <h4 class="text-center">Content from the table</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mx-auto p-5">
+            <div id="contact" class="contact section-box">
+              <h2 class="heading">Contact Us</h2>
+              <p>Contact with us through :</p>
+              <ul id="social" class="social"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section></section>
+    <footer>
+      <p>
+        &copy;
+        <span
+          ><script>
+            document.write(new Date().getFullYear());
+          </script></span
+        >
+        <a
+          target="_blank"
+          href="https://github.com/Shariar-Hasan"
+          class="link text-white h6"
+          >Shariar Hasan</a
+        >
+      </p>
+    </footer>
+    <button
+      id="scrollToTop"
+      onclick="window.scrollTo({ top: 10, behavior: 'smooth' });"
+      class="scroll-to-top click"
+    >
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

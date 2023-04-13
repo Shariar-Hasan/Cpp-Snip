@@ -1,0 +1,30 @@
+[
+    {
+        "version" : "v1.0.0",
+        "date" : "12/04/2023",
+        "updates" : [
+            "Updated",
+            "marketplace First Release"
+        ]
+    },
+    {
+        "version" : "v1.0.1",
+        "date" : "12/04/2023",
+        "updates" : [
+            "Fixed Some bugs",
+            "marketplace update"
+        ]
+    },
+    {
+        "version" : "v1.0.2",
+        "date" : "13/04/2023",
+        "updates" : [
+            "Boilarplate section fixed",
+            "Debug section added",
+            "Marketplace icon updated",
+            "Website deployed",
+            "Conditional statement added"
+
+        ]
+    }
+]

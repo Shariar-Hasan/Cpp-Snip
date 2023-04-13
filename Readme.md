@@ -78,6 +78,7 @@ This extension provides a number of helpful snippets for quickly typing C++ code
 - `aall`  - Complete from beginning to ending element of an `array`
 
 ### ***CPP Boilarplate***
+- `cppcontest`  - A complete boilarplate for the contest
 
 To use a snippet, simply start typing the snippet name and select the appropriate suggestion from the IntelliSense menu. Alternatively, you can use the keyboard shortcut associated with the snippet (which is displayed next to the snippet name in the IntelliSense menu).
 

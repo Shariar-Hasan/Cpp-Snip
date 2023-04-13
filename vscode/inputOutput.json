@@ -48,7 +48,7 @@
       "if(${0}) cout << \"YES\" << endl;",
       "else cout << \"NO\" << endl;"
     ],
-    "description": "Short Cut for IF ELSE Statement"
+    "description": "Short Cut for IF ELSE Yes or No Statement"
   },
   "Print YES": {
     "prefix": "yes",
@@ -66,6 +66,7 @@
     ],
     "description": "Print NO with newline"
   },
+  
 
   "Print an item": {
     "prefix": "print",
