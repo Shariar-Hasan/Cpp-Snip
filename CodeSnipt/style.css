@@ -219,6 +219,11 @@ p {
   animation: slideToTop 20s ease-in 0ms infinite forwards;
 
 }
+.version-history ul:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+
+}
 .version-history ul li {
   list-style: none;
   padding: 0;

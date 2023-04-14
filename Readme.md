@@ -12,6 +12,11 @@ To install this extension, follow these steps:
 4. Click the Install button
 5. Once the extension is installed, you're ready to start using it!
 
+Another way to install it is, open your terminal  and paste this command and hit enter:
+```
+code --install-extension Shariar-Hasan.cpp-snip-cp
+```
+
 ## Usage
 
 This extension provides a number of helpful snippets for quickly typing C++ code during competitive programming contests. Here are all off them:
@@ -65,6 +70,9 @@ This extension provides a number of helpful snippets for quickly typing C++ code
 - `count` - Count the number of appearance in a certain iterable
 - `max` - Finds the maximum of two values.
 - `min` - Finds the minimum of two values.
+- `IF` - If Statement in cpp.
+- `IFELSE` - If else Statement in cpp.
+- `IFELSEIF` - Else if Statement in cpp.
 
 ### ***Loops***
 - `foriinc`  - Make a for loop with `i` from 0 to `n-1`
@@ -98,4 +106,4 @@ If you'd like to contribute to this extension, you can do so by submitting a pul
 
 If you have any feedback or issues with this extension, please feel free to submit an issue on the extension's GitHub repository: [Submit Issues](https://github.com/Shariar-Hasan/Cpp-Snip/issues)
 
-You can also find additional resources for learning C++ and competitive programming on the extension's website: [The Website is not build Yet](https://google.com)
+You can also find additional resources for learning C++ and competitive programming on the extension's website: [Official Website](https://shariar-hasan.github.io/Cpp-Snip/CodeSnipt/index.html)
