@@ -29,12 +29,11 @@
     },
     {
         "version" : "v1.0.3",
-        "date" : "###################/04/2023",
+        "date" : "14/04/2023",
         "updates" : [
             "Markdown file - official website link added",
             "Package edited",
             "Website edited"
-
         ]
     }
 ]
