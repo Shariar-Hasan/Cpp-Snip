@@ -1,94 +1,88 @@
 {
   "Push Back": {
     "prefix": "pb",
-    "body": ["push_back(${0});"],
+    "body": ["push_back(${1});"],
     "description": "Inserts an element at the end of a container."
   },
   "Pop Back": {
     "prefix": "pob",
-    "body": ["pop_back(${0});"],
+    "body": ["pop_back(${1});"],
     "description": "Removes the last element from a container."
   },
   "Push Front": {
     "prefix": "pf",
-    "body": ["push_front(${0});"],
+    "body": ["push_front(${1});"],
     "description": "Inserts an element at the beginning of a container."
   },
 
   "Make Pair": {
     "prefix": "mp",
-    "body": ["make_pair(${0});"],
+    "body": ["make_pair(${1});"],
     "description": "Creates a pair object with two values."
   },
 
   "Max Element": {
     "prefix": "maxall",
-    "body": ["*max_element(${0});"],
+    "body": ["*max_element(${1});"],
     "description": "Finds the maximum element in a container."
   },
   "Min Element": {
     "prefix": "minall",
-    "body": ["*min_element(${0});"],
+    "body": ["*min_element(${1});"],
     "description": "Finds the minimum element in a container."
   },
   "Memset Function": {
     "prefix": "memset",
-    "body": ["memset(${0}, 0, sizeof(${0}));"],
+    "body": ["memset(${1}, 0, sizeof(${1}));"],
     "description": "Sets a block of memory to a particular value."
   },
 
   "Sort Function": {
     "prefix": "sort",
-    "body": ["sort(${0});"],
+    "body": ["sort(${1});"],
     "description": "Sorts a container in ascending order."
   },
   "Reverse Sort Function": {
     "prefix": "revsort",
-    "body": ["sort(${0}, [](int a, int b) { return a > b; });"],
+    "body": ["sort(${1}, [](int a, int b) { return a > b; });"],
     "description": "Sorts a container for array in descending order."
   },
 
   "memset funtion": {
     "prefix": "memset",
-    "body": ["memset(${0}, 0, sizeof(${0}));"],
+    "body": ["memset(${1}, 0, sizeof(${1}));"],
     "description": "Fill 0 | -1 to any array"
   },
   "count funtion": {
     "prefix": "count",
-    "body": ["count(${1}, ${1} + n, ${0});", ""],
+    "body": ["count(${1}, ${1} + n, ${1});", ""],
     "description": "Count the number of appearance in a certain iterable"
   },
 
   "Max Function": {
     "prefix": "max",
-    "body": ["max(${0});"],
+    "body": ["max(${1});"],
     "description": "Finds the maximum of two values."
   },
   "Min Function": {
     "prefix": "min",
-    "body": ["min(${0});"],
+    "body": ["min(${1});"],
     "description": "Finds the minimum of two values."
   },
 
   "If": {
     "prefix": "IF",
-    "body": ["if(${0}){", "\t", "}"],
+    "body": ["if(${1}){", "\t", "}"],
     "description": "If Statement in cpp."
   },
   "If else": {
     "prefix": "IFELSE",
-    "body": ["if(${0}){", "\t", "}else{", "\t", "}"],
+    "body": ["if(${1}){", "\t", "}else{", "\t", "}"],
     "description": "If else Statement in cpp."
   },
   "If elseif": {
     "prefix": "IFELSEIF",
-    "body": ["if(${0}){", "\t", "}else if(){", "\t", "}"],
+    "body": ["if(${1}){", "\t", "}else if(){", "\t", "}"],
     "description": "Else if Statement in cpp."
-  },
-
-  "Print New Line": {
-    "prefix": "nln",
-    "body": ["cout << \"\\n\";;"],
-    "description": "Prints a new line using C++ cout.Useful for formatting output."
   }
 }

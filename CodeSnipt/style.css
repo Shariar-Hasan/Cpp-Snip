@@ -238,14 +238,21 @@ p {
 }
 @keyframes slideToTop {
   0% {
-    transform: translateY(100%);
+    transform: translateY(0%);
   }
   100% {
-    transform: translateY(-100%);
+    transform: translateY(-110%);
   }
 }
 .social-icon{
   padding: 10px;
+}
+.click-pointer{
+  cursor: pointer;
+}
+.language-cpp-parent{
+  background-color: black;
+  border-radius: 10px;
 }
 /* Specific Styles */
 

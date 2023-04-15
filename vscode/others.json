@@ -2,7 +2,7 @@
     "STL begin end": {
 		"prefix": "vall",
 		"body": [
-			"${0}.begin(), ${0}.end()"
+			"${1}.begin(), ${1}.end()"
 		],
 		"description": "Complete from beginning to ending element of a STL"
 	},

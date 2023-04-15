@@ -35,5 +35,17 @@
             "Package edited",
             "Website edited"
         ]
+    },
+    {
+        "version" : "v1.0.4",
+        "date" : "14/04/2023",
+        "updates" : [
+            "Marqueue Bug fix",
+            "version data fix",
+            "variable section bug fixed",
+            "New item added in input & output section",
+            "Some web updates",
+            "Debug option added"
+        ]
     }
 ]

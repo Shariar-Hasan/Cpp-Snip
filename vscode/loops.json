@@ -3,7 +3,7 @@
 		"prefix": "foriinc",
 		"body": [
 			"for(int i = 0; i < n; ++i){",
-			"\t${0}",
+			"\t${1}",
 			"}"
 		],
 		"description": "Make a for loop with i from 0 to n-1"
@@ -12,7 +12,7 @@
 		"prefix": "fori1inc",
 		"body": [
 			"for(int i = 1; i <= n; ++i){",
-			"\t${0}",
+			"\t${1}",
 			"}"
 		],
 		"description": "Make a for loop with i from 1 to n"
@@ -30,7 +30,7 @@
 		"prefix": "forjinc",
 		"body": [
 			"for(int j = 0; j < n; ++j){",
-			"\t${0}",
+			"\t${1}",
 			"}"
 		],
 		"description": "Make a for loop with j from 0 to n-1"
@@ -39,7 +39,7 @@
 		"prefix": "forj1inc",
 		"body": [
 			"for(int j = 1; j <= n; ++j){",
-			"\t${0}",
+			"\t${1}",
 			"}"
 		],
 		"description": "Make a for loop with j from 1 to n"

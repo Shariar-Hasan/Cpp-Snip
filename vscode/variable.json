@@ -1,118 +1,118 @@
 {
   "long long int": {
     "prefix": "ll",
-    "body": ["long long ${0};"],
+    "body": ["long long ${1};"],
     "description": "Declares a variable of type long long."
   },
   "unsigned long long int": {
     "prefix": "ull",
-    "body": ["unsigned long long ${0};"],
+    "body": ["unsigned long long ${1};"],
     "description": "Declares an unsigned variable of type long long."
   },
   "double": {
     "prefix": "dbl",
-    "body": ["double ${0};"],
+    "body": ["double ${1};"],
     "description": "Declares an unsigned variable of type double."
   },
 
   "vector<int>": {
     "prefix": "vi",
-    "body": ["vector<int> ${0};"],
+    "body": ["vector<int> ${1};"],
     "description": "Declares a vector of type int."
   },
   "vector<bool>": {
     "prefix": "vb",
-    "body": ["vector<bool> ${0};"],
+    "body": ["vector<bool> ${1};"],
     "description": "Declares a vector of type bool."
   },
   "vector<long long>": {
     "prefix": "vl",
-    "body": ["vector<long long> ${0};"],
+    "body": ["vector<long long> ${1};"],
     "description": "Declares a vector of type long long."
   },
   "vector<string>": {
     "prefix": "vs",
-    "body": ["vector<string> ${0};"],
+    "body": ["vector<string> ${1};"],
     "description": "Declares a vector of type string."
   },
 
   "set<int>": {
     "prefix": "si",
-    "body": ["set<int> ${0};"],
+    "body": ["set<int> ${1};"],
     "description": "Declares a set of type int."
   },
   "set<long long>": {
     "prefix": "sl",
-    "body": ["set<long long> ${0};"],
+    "body": ["set<long long> ${1};"],
     "description": "Declares a set of type long long int."
   },
   "map< >": {
     "prefix": "map",
-    "body": ["set<int> ${0};"],
+    "body": ["map< > ${1};"],
     "description": "Declares a map."
   },
   "unordered_map<>": {
     "prefix": "umap",
-    "body": ["unordered_map< > ${0};"],
+    "body": ["unordered_map< > ${1};"],
     "description": "Declares a unordered_map."
   },
 
   "pair<int,int>": {
     "prefix": "pii",
-    "body": ["pair<int, int> ${0};"],
+    "body": ["pair<int, int> ${1};"],
     "description": "Declares a pair of type int and int."
   },
   "pair<long long, long long>": {
     "prefix": "pll",
-    "body": ["pair<long long, long long> ${0};"],
+    "body": ["pair<long long, long long> ${1};"],
     "description": "Declares a pair of type long long and long long."
   },
 
   "vector<pair<int, int>>": {
     "prefix": "vii",
-    "body": ["vector<pair<int, int>> ${0};"],
+    "body": ["vector<pair<int, int>> ${1};"],
     "description": "Declares a vector of pairs of type int and int."
   },
   "vector<pair<int, string>>": {
     "prefix": "vis",
-    "body": ["vector<pair<int, string>> ${0};"],
+    "body": ["vector<pair<int, string>> ${1};"],
     "description": "Declares a vector of pairs of type int and string."
   },
   "vector<pair<string, int>>": {
     "prefix": "vsi",
-    "body": ["vector<pair<string, int>> ${0};"],
+    "body": ["vector<pair<string, int>> ${1};"],
     "description": "Declares a vector of pairs of type string and int."
   },
   "vector<vector<int>>": {
     "prefix": "vvi",
-    "body": ["vector<vector<int>> ${0};"],
+    "body": ["vector<vector<int>> ${1};"],
     "description": "Declares a 2D vector of type int."
   },
   "vector<pair<long long, long long>>": {
     "prefix": "vll",
-    "body": ["vector<pair<long long, long long>> ${0};"],
+    "body": ["vector<pair<long long, long long>> ${1};"],
     "description": "Declares a vector of pairs of type long long and long long."
   },
 
   "vector<int>::iterator": {
     "prefix": "vit",
-    "body": ["vector<int>::iterator ${0};"],
+    "body": ["vector<int>::iterator ${1};"],
     "description": "Declares an iterator for a vector of type int."
   },
   "set<int>::iterator": {
     "prefix": "sit",
-    "body": ["set<int>::iterator ${0};"],
+    "body": ["set<int>::iterator ${1};"],
     "description": "Declares an iterator for a set of type int."
   },
 
   "map< >::iterator": {
     "prefix": "mit",
-    "body": ["map<${1}>::iterator ${0};"],
+    "body": ["map<${1}>::iterator ${1};"],
     "description": "Declares an iterator for a map."
   },
   "unordered_map< >::iterator": {
     "prefix": "umit",
-    "body": ["unordered_map<${1}>::iterator ${0};"],
+    "body": ["unordered_map<${1}>::iterator ${1};"],
     "description": "Declares an iterator for an unordered_map."
   }
 }

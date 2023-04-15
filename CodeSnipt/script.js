@@ -3,6 +3,7 @@ const socialItemTag = document.querySelector("#social");
 const scrollItemTag = document.querySelector("#scrollToTop");
 const tableOfContentItemTag = document.querySelector("#table-of-content");
 const contentDetailsItemTag = document.querySelector("#contents-with-detail");
+const codeShowItemTag = document.querySelector("#codeShow");
 
 // version history section
 fetch("./jsons/versionHistory.json")
@@ -47,9 +48,9 @@ fetch("./jsons/contentTable.json")
     contents.forEach((content) => {
       const li = document.createElement("li");
       li.innerHTML = `
-        <a href="#${content.link}" class="link">
+        <span class="link click-pointer">
           <h5 onclick="showContent(\'${content.json}\', \'${content.name}\')">${content.name}</h5>
-        </a>
+        </span>
         `;
       tableOfContentItemTag.appendChild(li);
     });
@@ -67,39 +68,32 @@ document.addEventListener("scroll", () => {
   }
 });
 
-// banner typewriter section
-new Typewriter("#typewriter", {
-  strings: [
-    "Welcome to Cpp Snip CP Website",
-    "Feel Free to browse<br>through the documentation",
-  ],
-  autoStart: true,
-  delay: 80,
-  deleteSpeed: 30,
-  pauseFor: 2000,
-  loop: true,
-});
-
 const showContent = (jsonFile, contentName) => {
   fetch(`./../vscode/${jsonFile}`)
     .then((res) => res.json())
     .then((items) => {
-      console.log(items);
       let tbody = "";
       Object.keys(items).forEach((key) => {
         tbody += `
-        <tr>
-          <td>${items[key].prefix}</td>
+        <tr  class="click-pointer"   onclick="codeShow(\'${jsonFile}\', \'${contentName}\', \'${key}\')">
+          <td data-toggle="modal" data-target=".bd-example-modal-lg"><kbd>${items[key].prefix}</kbd></td>
           <td>${items[key].description}</td>
         </tr>
         `;
+        // tbody += `
+        // <tr>
+        //   <td class="click-pointer" onclick="codeShow('${items[key].prefix}','${items[key].description}','${items[key].body}','${contentName}')" data-toggle="modal" data-target=".bd-example-modal-lg"><kbd>${items[key].prefix}</kbd></td>
+        //   <td>${items[key].description}</td>
+        // </tr>
+        // `;
+        //console.log(items[key]);
       });
       contentDetailsItemTag.innerHTML = `
       <h4 class="heading">${contentName}</h4>
         <table class="table text-white table-borderless">
           <thead class="bg-dark">
             <tr>
-              <th class="col-4">KEY</th>
+              <th class="col-4">Prefix</th>
               <th class="col-8">DESCRIPTION</th>
             </tr>
           </thead>
@@ -108,5 +102,61 @@ const showContent = (jsonFile, contentName) => {
           </tbody>
       </table>
       `;
+    });
+};
+// show code of the prefix
+// const codeShow = (prefix, description, body, contentName) => {
+const codeShow = (jsonFile, contentName, key) => {
+  console.log("f ", key);
+  let code = "";
+  fetch(`./../vscode/${jsonFile}`)
+    .then((res) => res.json())
+    .then((items) => {
+      console.log(Object.keys(items));
+      const { prefix, description, body } =
+        items[Object.keys(items).find((k) => k === key)];
+      body.forEach((element) => {
+        code += `<span class='codeblock'>${element.replace(
+          "\t",
+          "&emsp;"
+        )}</span> <br>`;
+      });
+      console.log(code);
+      codeShowItemTag.innerHTML = `
+      <table class="table table-borderless table-dark lead p-5 rounded  w-100">
+        <tbody>
+          <tr>
+            <td class="col-3">Prefix</td>
+            <td class="col-9"><kbd>${prefix}<kbd></td>
+          </tr>
+          <tr>
+            <td class="col-3">Section</td>
+            <td class="col-9">${contentName}</td>
+          </tr>
+          <tr>
+            <td class="col-3">Description</td>
+            <td class="col-9">${description}</td>
+          </tr>
+          <tr>
+            <td class="col-3">Code</td>
+            <td class="col-9 language-cpp-parent">
+                <code class="language-cpp">
+                  ${code}
+                </code>
+            </td>
+          </tr>
+          <tr>
+            <td class="col-3">Tutorial</td>
+            <td class="col-9">
+                Not Added YET
+            </td>
+          </tr>
+        </tbody>
+      </table>
+        `;
+      // document.querySelectorAll("span.codeblock").forEach((el) => {
+      //   // then highlight each
+      //   hljs.highlightElement(el, {language : "cpp"});
+      // });
     });
 };
