@@ -56,6 +56,7 @@ This extension provides a number of helpful snippets for quickly typing C++ code
 - `print` - Print an item
 - `input` - Take input on an item
 - `inputall` - Take input on multiple items
+- `debug` - Use to debug code
 
 ### ***Built In Functions***
 - `pb` - Inserts an element at the end of a container.
