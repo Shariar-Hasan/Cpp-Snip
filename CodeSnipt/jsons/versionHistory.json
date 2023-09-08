@@ -1,51 +1,49 @@
 [
-    {
-        "version" : "v1.0.0",
-        "date" : "12/04/2023",
-        "updates" : [
-            "Updated",
-            "marketplace First Release"
-        ]
-    },
-    {
-        "version" : "v1.0.1",
-        "date" : "12/04/2023",
-        "updates" : [
-            "Fixed Some bugs",
-            "marketplace update"
-        ]
-    },
-    {
-        "version" : "v1.0.2",
-        "date" : "13/04/2023",
-        "updates" : [
-            "Boilarplate section fixed",
-            "Debug section added",
-            "Marketplace icon updated",
-            "Website deployed",
-            "Conditional statement added"
-
-        ]
-    },
-    {
-        "version" : "v1.0.3",
-        "date" : "14/04/2023",
-        "updates" : [
-            "Markdown file - official website link added",
-            "Package edited",
-            "Website edited"
-        ]
-    },
-    {
-        "version" : "v1.0.4",
-        "date" : "15/04/2023",
-        "updates" : [
-            "Marqueue Bug fix",
-            "version data fix",
-            "variable section bug fixed",
-            "New item added in input & output section",
-            "Some web updates",
-            "Debug option added"
-        ]
-    }
+  {
+    "version": "v1.0.0",
+    "date": "12/04/2023",
+    "updates": ["Updated", "marketplace First Release"]
+  },
+  {
+    "version": "v1.0.1",
+    "date": "12/04/2023",
+    "updates": ["Fixed Some bugs", "marketplace update"]
+  },
+  {
+    "version": "v1.0.2",
+    "date": "13/04/2023",
+    "updates": [
+      "Boilarplate section fixed",
+      "Debug section added",
+      "Marketplace icon updated",
+      "Website deployed",
+      "Conditional statement added"
+    ]
+  },
+  {
+    "version": "v1.0.3",
+    "date": "14/04/2023",
+    "updates": [
+      "Markdown file - official website link added",
+      "Package edited",
+      "Website edited"
+    ]
+  },
+  {
+    "version": "v1.0.4",
+    "date": "15/04/2023",
+    "updates": [
+      "Marqueue Bug fix",
+      "version data fix",
+      "variable section bug fixed",
+      "New item added in input & output section",
+      "Some web updates",
+      "Debug option added"
+    ]
+  },
+  {
+    "version": "v1.0.5",
+    "date": "08/09/2023",
+    "updates": ["Some Error Fixed"]
+  }
 ]
