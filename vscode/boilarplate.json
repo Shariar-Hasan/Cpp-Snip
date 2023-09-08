@@ -1,21 +1,36 @@
 {
-    "competitive cpp snippet": {
-        "prefix": "cppcontest",
-        "body": [
-          "#include <bits/stdc++.h>",
-          "using namespace std;",
-          "",
-          "int main()",
-          "{",
-          "\tios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);",
-          "\tint _tst = 1;",
-          "\tcin >> _tst; //comment this line if your have only 1 test case",
-          "\tfor(int _ = 1; _ <= _tst ; ++_){",
-          "\t\t${1}",
-          "\t}",
-          "\treturn 0;",
-          "}"
-        ],
-        "description": "CPP snippet by Cpp-Snip "
-      }
+  "competitive cpp snippet": {
+    "prefix": "cppcontest",
+    "body": [
+      "/*",
+      "\t\t\t Timestamp  : $CURRENT_HOUR:$CURRENT_MINUTE - $CURRENT_DAY_NAME  $CURRENT_DATE,$CURRENT_MONTH_NAME_SHORT $CURRENT_YEAR   ",
+      "*/",
+      "#include <bits/stdc++.h>",
+      "using namespace std;",
+      "",
+      "",
+      "void solve(long long _case)",
+      "{",
+      "\tlong long n, m, k, b, mn = INT_MAX, mx = -1, cnt = 0, sum = 0;",
+      "\tcin >> n;",
+      "\tlong long a[n];",
+      "\tfor (int i = 0; i < n; ++i)",
+      "\t{",
+      "\t\tcin >> a[i];",
+      "\t}",
+      "}",
+      "",
+      "",
+      "int main()",
+      "{",
+      "\tios_base::sync_with_stdio(0);\n\tcin.tie(0);\n\tcout.tie(0);",
+      "\tlong long t = 1;",
+      "\tcin >> t; // comment this line if your problem has 1 test case",
+      "",
+      "\tfor(long long _case = 1; _case <= t; ++_case)solve(_case);",
+      "\treturn 0;",
+      "}"
+    ],
+    "description": "C++ snippet by Cpp-Snip"
+  }
 }

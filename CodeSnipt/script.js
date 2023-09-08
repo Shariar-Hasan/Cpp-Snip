@@ -75,18 +75,11 @@ const showContent = (jsonFile, contentName) => {
       let tbody = "";
       Object.keys(items).forEach((key) => {
         tbody += `
-        <tr  class="click-pointer"   onclick="codeShow(\'${jsonFile}\', \'${contentName}\', \'${key}\')">
+        <tr  class="click-pointer" title="Click to View More"   onclick="codeShow(\'${jsonFile}\', \'${contentName}\', \'${key}\')">
           <td data-toggle="modal" data-target=".bd-example-modal-lg"><kbd>${items[key].prefix}</kbd></td>
           <td>${items[key].description}</td>
         </tr>
         `;
-        // tbody += `
-        // <tr>
-        //   <td class="click-pointer" onclick="codeShow('${items[key].prefix}','${items[key].description}','${items[key].body}','${contentName}')" data-toggle="modal" data-target=".bd-example-modal-lg"><kbd>${items[key].prefix}</kbd></td>
-        //   <td>${items[key].description}</td>
-        // </tr>
-        // `;
-        //console.log(items[key]);
       });
       contentDetailsItemTag.innerHTML = `
       <h4 class="heading">${contentName}</h4>
